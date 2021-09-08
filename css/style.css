@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    background-color:bisque;
+}
+
+.formRegistro{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 7px;
+    background:bisque;
+}
+
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+.inputs-48{
+    width: 48%;
+    font-size: 14px;    
+}  
+
+.botons{
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.botons:active{
+    transform: scale(1.05);
+}
+
+.form__link{
+    width: 100%;
+    margin: 7px;    
+    text-align: center;
+    font-size: 14px;
+}
+
