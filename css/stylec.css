@@ -1,0 +1,34 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.peli1{
+    width: 155px;
+    height: 242px;
+    padding: 0px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    margin-left: 110px;
+    margin-right: 0px;
+}
+.peli2{
+    width: 155px;
+    height: 242px;
+    padding: 0px;
+    margin-top: -245px;
+    margin-bottom: 0px;
+    margin-left: 340px;
+    margin-right: 0px;
+}
