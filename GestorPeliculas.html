@@ -10,12 +10,11 @@
 <body>
     <nav></nav>
     <div class="title">
-        <p>Cartelera</p>
-        <button class="btn-new">Nuevo</button>
+        <h2>Cartelera</h2>
+        <a href="#addmovie"><button type="button" class="title__btn-new">Nuevo</button></a>
     </div>
     <div class="movies">
-        <ul>
-            <div>
+            <a class="movies-link" href="">
                 <img src="img/imagen1.jpg" alt="pelicula1">
                 <div class="name-movie">
                     <p class="name-movie__title">Infinite</p>
@@ -24,8 +23,8 @@
                         <button class="name-movie__btn-delete">Eliminar</button>
                     </div>
                 </div>
-            </div>
-            <div>
+            </a>
+            <a class="movies-link" href="">
                 <img src="img/imagen2.jpg" alt="pelicula2">
                 <div class="name-movie">
                     <p class="name-movie__title">Jungle Cruise</p>
@@ -34,18 +33,18 @@
                         <button class="name-movie__btn-delete">Eliminar</button>
                     </div>
                 </div>
-            </div>
-            <div>
+            </a>
+            <a class="movies-link" href=""> 
                 <img src="img/imagen3.jpg" alt="pelicula3">
                 <div class="name-movie">
-                    <p class="name-movie__title">SAS El Ascenso del Cisne Negro</p>
+                    <p class="name-movie__title">SAS El ascenso del cisne negro</p>
                     <div class="name-movie__buttons">
                         <button class="name-movie__btn-edit">Editar</button>
                         <button class="name-movie__btn-delete">Eliminar</button>
                     </div>
                 </div>
-            </div>
-            <div>
+            </a>
+            <a class="movies-link" href="">
                 <img src="img/imagen4.jpg" alt="pelicula4">
                 <div class="name-movie">
                     <p class="name-movie__title">Sweet Girl</p>
@@ -54,8 +53,8 @@
                         <button class="name-movie__btn-delete">Eliminar</button>
                     </div>
                 </div>
-            </div>
-            <div>
+            </a>
+            <a class="movies-link" href="">
                 <img src="img/imagen5.jpg" alt="pelicula5">
                 <div class="name-movie">
                     <p class="name-movie__title">El Ultimo Mercenario</p>
@@ -64,29 +63,81 @@
                         <button class="name-movie__btn-delete">Eliminar</button>
                     </div>
                 </div>
-            </div>
-        </ul>
+            </a>
 
     </div>
 
-    <div class="modal" id="addmovie">
-        <h3>Gestor de peliculas</h3>
-        <div class="">
-            <div>
-                <text>
-                    <text>
-                        <text>
-                            <text><textarea name="" id="" cols="30" rows="10"></textarea></text>
-                        </text>
-                    </text>
-                </text>
-            </div>
-            
-            <a href="#imgmovie4">&#60</a>
-            <a href="#imgmovie2"><img src="img/imagen1.jpg" alt=""></a>
-            <a href="#imgmovie2">></a>
+    <div class="modal-addmovie" id="addmovie">
+        <div class="modal-addmovie__title">
+            <h3>Gestor de peliculas</h3>
+            <a href="" class="close">X</a>
         </div>
-        <a href="" class="close">X</a>
+        <div class="modal-addmovie__data">
+            <form action="" method="get" class="modal-addmovie__data-form"></form>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+                    <div class="dropdown-menu">
+                        <label for="format">Formato</label>
+                        <input type="text" id="format">
+                        <button class="dropdown-menu__btn" type="button"></button>
+                        <div class="dropdown-menu__content">
+                            <ul>
+                                <a class="dropdown-menu__content-item" href="#">Formato 1</a>
+                                <a class="dropdown-menu__content-item" href="#">Formato 2</a>
+                                <a class="dropdown-menu__content-item" href="#">Formato 3</a>
+                                <hr class="dropdown-menu__content-divider">
+                                <a class="dropdown-menu__content-item" href="#">Formato 4</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <label for="class">Clasificación</label>
+                        <input type="text" id="class">
+                        <button class="dropdown-menu__btn" type="button"></button>
+                        <div class="dropdown-menu__content">
+                            <ul>
+                                <a class="dropdown-menu__content-item" href="#">AA  - Películas para todo público que tengan además atractivo infantil y sean comprensibles para niños menores de siete años de edad.</a>
+                                <a class="dropdown-menu__content-item" href="#">A   - Películas para todo público.</a>
+                                <!--<hr class="dropdown-menu__content-divider">-->
+                                <a class="dropdown-menu__content-item" href="#">B   - Películas para adolescentes de 12 años en adelante.</a>
+                                <a class="dropdown-menu__content-item" href="#">B15 - Película no recomendable para menores de 15 años de edad.</a>
+                                <a class="dropdown-menu__content-item" href="#">C   - Películas para adultos de 18 años en adelante.</a>
+                                <a class="dropdown-menu__content-item" href="#">D   - Películas para adultos, con sexo explícito, lenguaje procaz o alto grado de violencia.</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <label for="points">Puntaje</label>
+                    <input type="range">
+                        <div><label for="state">Estado</label>
+                        <input type="radio" name="state" id="state-active" >
+                        <label for="state-active">Activa</label>
+                        <input type="radio" name="state" id="state-inactive"> 
+                        <label for="state-inactive">Inactiva</label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="people">Reparto</label>
+                        <input type="text">
+                    </div>
+                    <label for="sinopsis">Sinopsis</label>
+                    <textarea name="sinopsis" id="" cols="22" rows="5"></textarea>
+                    <div>
+                        <label for="file">Cartel</label>
+                        <input type="file">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Guardar</button> 
+                </div>
+                
+            </form>
+            
+            <!--<a href="#imgmovie4">&#60</a>
+            <a href="#imgmovie2"><img src="img/imagen1.jpg" alt=""></a>
+            <a href="#imgmovie2">></a>-->
+        </div>
     </div>
 
 

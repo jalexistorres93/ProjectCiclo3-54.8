@@ -58,39 +58,40 @@
 
  /* Estilos para la Página de Cartelera, Interfaz de Gestion de Peliculas IU03 */
 
-.movies{
-  width: 90%;
+.movies {
+  width: auto;
   margin: auto;
   list-style: none;
   padding: 20px;
   box-sizing: border-box;
   align-content: space-around;
-  display: inline;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.galeria li{
-  margin: 5px;
+.movies-link {
+  display: inline-block;
+  color: #070707;
+  width: 20%;
+  /*padding: 0 .5rem 1rem;*/
+  font-size: 13px;
 }
 
-.galeria img{
-  width: 150px;
-  height: 100px;
-
-}
-  
 
 .movies img{
-      width: 30%;
-      height: auto;
-      padding: 45px;
+      width: 90%;
+      height: 90%;
+      padding: 1px;
+      align-items: center;
   }
 
 .name-movie__title {
-  font-size: 30px;
-  /*display: inline-flex;*/
+  width: 70%;
+  font-size: 15px;
   text-align: center;
+  font-weight: bold;
 }
 
 .name-movie {
@@ -103,28 +104,42 @@
   align-content: space-evenly;
 }
 
-/*Estilos del modal*/
+/*Estilos del modal addmovie*/
 
-.modal{
+.modal-addmovie{
   display:none;
-
 }
 
-.modal:target {
-  display:block;
+.modal-addmovie:target {
+  display: inline-block;
+  text-align: center;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(2, 5, 10, 0.8);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  color: #fff;
+  padding: 8% 0 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.modal h3{
+.modal-addmovie__title{
   color: #fff;
   font-size: 30px;
   text-align: center;
   margin: 15px 0;
+  display: inline-flex;
+  text-align: center;
+}
+
+.modal-addmovie__data{
+  color: #fff;
+  font-size: 15px;
+  margin: 15px 0;
+  display: flex;
+  text-align: justify;
 }
 
 .image {
@@ -170,4 +185,30 @@
   padding: 5px;
   border-radius: 50%;
   line-height: 25px;
+}
+
+.dropdown-menu__content{
+  display: none;
+}
+
+.dropdown-menu__content a{
+  display: block;
+}
+
+.dropdown-menu__content a:hover {
+  background-color: #6e6e6c
+}
+
+.dropdown-menu__content a {
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #050505
+}
+
+
+.dropdown-menu:hover .dropdown-menu__content {
+  display: block;
+  position:fixed;
 }
