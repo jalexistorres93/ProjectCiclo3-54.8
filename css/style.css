@@ -20,7 +20,7 @@ h1{
     max-width: 500px;
     margin: auto;
     border-radius: 7px;
-    background:bisque;
+    background:bisque;    
 }
 
 .contenedor-inputs{
@@ -54,10 +54,18 @@ input{
     transform: scale(1.05);
 }
 
-.form__link{
+.form__link1{
     width: 100%;
     margin: 7px;    
     text-align: center;
     font-size: 14px;
+}
+
+.form__link2{
+    width: 100%;
+    margin: 7px;    
+    text-align: left;
+    font-size: 12px;
+    color: brown;
 }
 
