@@ -1,5 +1,14 @@
-.cartelera h1{
-    text-align: left;
-    font-size: 30px;
-    margin: 15px 0px 20px;
+.cartelera h1 {
+  font-size: 30px;
+  margin: 15px 0px 20px;
+}
+.info-item {
+  text-align: left;
+}
+img {
+  height: 245px;
+  width: 180px;
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }

@@ -21,8 +21,6 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     
@@ -32,7 +30,6 @@ img{
     height: 242px;
     position: relative;
     overflow: hidden;
-    border-radius: 9px;
 }
 .cartelera-text{
     position: absolute;
@@ -44,7 +41,7 @@ img{
     transform: translateY(100%)
 }
 .cartelera-text p{
-    text-align: justify;
+    text-align: match-parent;
 }
 .cartelera-item:hover .cartelera-text{
     transform: translateY(0%);
@@ -53,12 +50,9 @@ img{
 .h3{
     text-align: center;
 }
-.Nombre_peli{
+.cartelera{
     width: 70%;
   font-size: 15px;
-  text-align: center;
+  text-align: match-parent;
   font-weight: bold;
-}
-.Peli_nombre{
-    display: flex;
 }
